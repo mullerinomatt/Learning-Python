@@ -1,0 +1,11 @@
+x='Carey, Pamela C/(AO)'
+slashpos=x.find('/')
+removeslash=x[:slashpos]
+firstspace=removeslash.find(' ')
+secondspace=removeslash.find(' ',firstspace+1)
+thirdspace=removeslash.find(' ',secondspace+1)
+name = removeslash[:secondspace]
+lastfirst = name.replace(',','')
+lastfirstspace=lastfirst.find(' ')
+lastname=lastfirst[:lastfirstspace]
+firstname=lastfirst[lastfirstspace+1:]
